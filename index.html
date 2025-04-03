@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Lista de Contatos -->
+        <div class="contatos">
+            <div class="cabecalho">
+                <div class="minha-foto"></div>
+            </div>
+
+            <div class="busca">
+                <input type="text" id="procurar" placeholder="Procurar contato">
+                <button id="buscarContato">Buscar</button>
+            </div>
+
+            <div id="listaContatos" class="lista-contatos"></div>
+        </div>
+
+        <!-- Área de Conversa -->
+        <div class="conversa">
+            <div class="topo">
+                <div id="fotoContato" class="foto"></div>
+                <div class="detalhes">
+                    <div id="nomeContato" class="nome">Selecione um contato</div>
+                </div>
+            </div>
+
+            <div id="mensagens" class="mensagens"></div>
+
+            <div class="digitar-msg">
+                <input type="text" id="mensagemInput" placeholder="Digite uma mensagem">
+                <button id="enviarMensagem">Enviar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
